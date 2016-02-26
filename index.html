@@ -269,76 +269,18 @@
 
       
         
-          
-            <h2 id="关键代码mark"><a href="#关键代码mark" class="headerlink" title="关键代码mark"></a>关键代码mark</h2><ul>
-<li><p><a href="http://ibruce.info/2013/11/26/markdown/" target="_blank" rel="external">MacDown简明语法</a></p>
+          <h2 id="关键代码mark"><a href="#关键代码mark" class="headerlink" title="关键代码mark"></a>关键代码mark</h2><ul>
+<li><p><a href="http://ibruce.info/2013/11/26/markdown/">MacDown简明语法</a></p>
 </li>
 <li><p>博客文章书写规范</p>
 </li>
 </ul>
 <figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">title</span>: <span class="string">postName #文章页面上的显示名称，可以任意修改，不会出现在URL中</span></span><br><span class="line"></span><br><span class="line"><span class="http"><span class="attribute">date</span>: <span class="string">2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改</span></span><br><span class="line"></span><br><span class="line"><span class="http"><span class="attribute">categories</span>: <span class="string">#文章分类目录，可以为空，注意:后面有个空格</span></span><br><span class="line"></span><br><span class="line"><span class="http"><span class="attribute">tags</span>: <span class="string">#文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格</span></span><br><span class="line"></span><br><span class="line"><span class="haml">photos:</span><br><span class="line">-<span class="ruby"> <span class="symbol">http:</span>/<span class="regexp">/bruce.u.qiniudn.com/</span><span class="number">2013</span>/<span class="number">11</span>/<span class="number">27</span>/reading/photos-<span class="number">0</span>.jpg</span><br><span class="line"></span>-<span class="ruby"> <span class="symbol">http:</span>/<span class="regexp">/bruce.u.qiniudn.com/</span><span class="number">2013</span>/<span class="number">11</span>/<span class="number">27</span>/reading/photos-<span class="number">1</span>.jpg</span><br><span class="line"></span></span><br><span class="line">description: 你对本页的描述</span></span></span></span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>hexo</li>
-</ul>
-<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">常用命令：</span><br><span class="line">hexo <span class="keyword">new</span> <span class="string">"postName"</span> <span class="preprocessor">#新建文章</span></span><br><span class="line">hexo <span class="keyword">new</span> page <span class="string">"pageName"</span> <span class="preprocessor">#新建页面</span></span><br><span class="line">hexo generate <span class="preprocessor">#生成静态页面至public目录</span></span><br><span class="line">hexo <span class="keyword">server</span> <span class="preprocessor">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></span><br><span class="line">hexo deploy <span class="preprocessor">#将.deploy目录部署到GitHub</span></span><br><span class="line"></span><br><span class="line">常用复合命令：</span><br><span class="line">hexo clean </span><br><span class="line">hexo deploy -g <span class="preprocessor">#部署到github服务器</span></span><br><span class="line">hexo <span class="keyword">server</span> -g <span class="preprocessor">#本地部署测试</span></span><br><span class="line"></span><br><span class="line">简写：</span><br><span class="line">hexo n == hexo <span class="keyword">new</span></span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo <span class="keyword">server</span></span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
-<ul>
-<li>ssh key</li>
-</ul>
-<p>检查你电脑上现有的ssh key：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/<span class="class">.ssh</span> 检查本机的ssh密钥</span><br></pre></td></tr></table></figure>
-<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
-<p>生成新的SSH Key：</p>
-<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"邮件地址@youremail.com"</span></span><br><span class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa <span class="keyword">key</span> pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which <span class="keyword">to</span> save the <span class="keyword">key</span> (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure>
-<p>最后可以验证一下：</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">ssh</span> -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure>
-<p>若有问题，请重新设置。常见错误请参考：</p>
-<p><a href="http://help.github.com/articles/generating-ssh-keys" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a></p>
-<p><a href="http://help.github.com/articles/error-permission-denied-publickey" target="_blank" rel="external">GitHub Help - Error Permission denied (publickey)</a></p>
-<hr>
-<h2 id="在github上搭建个人博客"><a href="#在github上搭建个人博客" class="headerlink" title="在github上搭建个人博客"></a>在github上搭建个人博客</h2><p><a href="http://git-scm.com/" target="_blank" rel="external">Git下载</a></p>
-<blockquote>
-<ul>
-<li>怎么打开Git？<ol>
-<li>Win 平台操作</li>
-<li>Mac 平台操作</li>
-</ol>
-</li>
-<li>使用GitHub<ol>
-<li>配置和使用 Github</li>
-<li>配置 SSH keys</li>
-<li>检查 SSH keys的设置</li>
-<li>生成新的SSH Key</li>
-<li>添加 SSH Key 到 GitHub</li>
-<li>SSH Key 配置问题</li>
-</ol>
-</li>
-<li>使用 GitHub Pages 建立博客</li>
-</ul>
-</blockquote>
-<p>以上内容可以参考 (提到的内容是核心，其他内容筛选着看)</p>
-<p><a href="http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/" target="_blank" rel="external">《如何搭建一个独立博客——简明 Github Pages与 jekyll 教程》</a> by cnfeat</p>
-<hr>
-<h2 id="使用hexo博客框架"><a href="#使用hexo博客框架" class="headerlink" title="使用hexo博客框架"></a>使用hexo博客框架</h2><p><a href="http://nodejs.org/" target="_blank" rel="external">Node.js下载</a></p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>1.Node和Git都安装好后，可执行如下命令安装hexo：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> -<span class="keyword">g</span> hexo</span></span><br></pre></td></tr></table></figure>
-<p><strong>【我在安装hexo报错了，然后执行下面这条命令解决了问题：】</strong></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm <span class="operator"><span class="keyword">install</span> —<span class="keyword">unsafe</span>-perm —verbose -<span class="keyword">g</span> hexo</span></span><br></pre></td></tr></table></figure>
-<p>2.初始化hexo目录</p>
-<p>方法一：执行init命令初始化hexo到你指定的目录：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init <span class="tag">&lt;<span class="title">folder</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>方法二：找到自己想要创建hexo博客框架的目录，手动创建一个文件夹，然后cd到当前目录，执行如下命令</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> init</span><br></pre></td></tr></table></figure>
-<h3 id="使用hexo"><a href="#使用hexo" class="headerlink" title="使用hexo"></a>使用hexo</h3><p>参考<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">《hexo你的博客》</a>by 不如  ,可以直接从 <strong>【生成静态页面】</strong> 开始看 .</p>
-<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>最后在我将hexo部署到github的时候，出现了如下问题</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Deployer <span class="keyword">not</span> found: github</span><br></pre></td></tr></table></figure>
-<p>原因是hexo 更新到3.0之后，deploy的type 的github需要改成git<br>然后在改成git，还是不行的话，需要运行下面的命令，</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
-<p>改了之后执行，然后再部署</p>
-<p>【解决问题链接：<a href="http://www.v2ex.com/t/175940" target="_blank" rel="external">http://www.v2ex.com/t/175940</a>】</p>
-<hr>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>主题的话我用的是<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT</a>，大家喜欢的话可以去看下，里面关于评论，分享，统计都有详细配置说明.</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/25/github_blog_hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
